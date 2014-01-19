@@ -12,6 +12,10 @@
         "rhumsaa/uuid": "~2.4",
         "nesbot/carbon": "dev-master"
     },
+    "suggest": {
+        "insectum/insectum": "Required for local usage",
+        "insectum/insectum-gui": "GUI tools"
+    },
     "autoload": {
         "psr-0": {
             "Insectum\\InsectumClient": "src/"

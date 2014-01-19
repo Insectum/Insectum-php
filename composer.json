@@ -1,0 +1,21 @@
+{
+    "name": "insectum/insectum-php",
+    "description": "",
+    "authors": [
+        {
+            "name": "Volodymyr Kornilov",
+            "email": "mail@terion.name"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "rhumsaa/uuid": "~2.4",
+        "nesbot/carbon": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Insectum\\InsectumClient": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

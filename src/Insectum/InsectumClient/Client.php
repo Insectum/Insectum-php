@@ -108,7 +108,7 @@ class Client
             throw new \InvalidArgumentException('Unknown storage type');
         }
 
-        $storageParams = Arr::except($storageConfig, 'type', array());
+        $storageParams = Arr::get($storageConfig, 'options', array());
         $reflect = new \ReflectionClass($storageClass);
         $storage = $reflect->newInstanceArgs($storageParams);
 

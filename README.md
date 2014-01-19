@@ -11,8 +11,10 @@ $insectumConfig = array(
     'server' => 'local',
     'storage' => array(
         'type' => 'pdo',
-        $dbh,
-        'database' // database name
+        'options' => array(
+            $dbh,
+            'database' // database name
+        )
     )
 );
 
@@ -22,9 +24,11 @@ $insectumConfig = array(
     'stage' => 'dev',
     'storage' => array(
         'type' => 'pdo',
-        'mysql:dbname=database;host=localhost',
-        'root', // username
-        'root' // password
+        'options' => array(
+            'mysql:dbname=database;host=localhost',
+            'root', // username
+            'root' // password
+        )
     )
 );
 
